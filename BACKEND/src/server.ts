@@ -1,11 +1,11 @@
-import express, { Request, Response, json } from 'express'
+import express, { Request, Response,NextFunction, json } from 'express'
 import { testConnection } from './Configuration/dbConfig';
 import notes_route from './Routes/notesRoute';
 import cors from 'cors'
 
 const app=express()
 
-
+app.use(cors())
 app.use(json())
 app.use('/note', notes_route)
 

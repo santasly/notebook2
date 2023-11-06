@@ -29,7 +29,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importStar(require("express"));
 const dbConfig_1 = require("./Configuration/dbConfig");
 const notesRoute_1 = __importDefault(require("./Routes/notesRoute"));
+const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
+app.use((0, cors_1.default)());
 app.use((0, express_1.json)());
 app.use('/note', notesRoute_1.default);
 app.use((error, req, res, next) => {
