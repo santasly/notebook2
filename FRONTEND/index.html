@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <div class="navbar">
+        
+    </div>
+
+    <div class="main">
+        <div class="add-note">
+         
+            <div class="add-project-container">
+                <div class="top-part">
+                </div>
+
+                <form class="add-note-form">
+                <label for="ntitle">Note Title:</label>
+                <input type="text" id="ntitle" name="ntitle" value="">
+        
+                <label for="ndescr">Note Description:</label>
+                <input type="text" id="ndescr" name="ndescr" value="">
+        
+                <label for="ncontent">Note Content:</label>
+                <textarea name="ncontent" id="ncontent" cols="30" rows="10"></textarea>
+        
+                <button class="button button1" type="submit">Add Note</button>
+            </form>
+                
+            </div>
+        </div>
+
+
+        <div class="main-output">
+            <div class="dashboard-card table-card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NOTE TITLE</th>
+                            <th>NOTE DESCRIPTION</th>
+                            <th>NOTE CONTENT</th>
+                            <th>NOTE DATE</th>
+    
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+    </div>
+  <script src=".\dist\index.js"></script>
+
+</body>
+</html>
